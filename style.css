@@ -4,13 +4,25 @@
     box-sizing: border-box;
 }
 
-header, main{
+
+
+.dados{ 
     display: flex;
-    flex-direction: column;
+    gap: 15px;
+    width: 1000px;
+    height: 500px;/*padding: 20px; caso quebre tudo*/
+    background-color: aqua;
     align-items: center;
+    
 }
 
+.box{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    min-width: 100px;
+    border-radius: 5px;
+    
 
-button{
-    width: 80px;
 }
