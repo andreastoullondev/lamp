@@ -10,7 +10,7 @@
     display: flex;
     gap: 15px;
     width: 1000px;
-    height: 500px;/*padding: 20px; caso quebre tudo*/
+    height: 500px;
     background-color: aqua;
     align-items: center;
     
@@ -18,11 +18,12 @@
 
 .box{
     padding: 20px;
+    width: 100%;
+    height: 100%;
     background-color: white;
     color: black;
     text-align: center;
-    min-width: 100px;
-    border-radius: 5px;
-    
+    border: 5px solid black;
+    display: flex;
 
 }
