@@ -63,3 +63,16 @@ document.addEventListener("DOMContentLoaded", function(){
         atualizaNoHtml()
     })
 })
+
+
+// Pedra papel ou tesoura Muito trabalho, mas temos a solução 
+
+
+var elementos = document.querySelectorAll('.player-options div > img');
+
+
+for(var i = 0; i < elementos.length; i++){
+    elementos[i].addEventListener('click', function(){
+        alert('clicado');
+    })
+}
