@@ -70,13 +70,35 @@ document.addEventListener("DOMContentLoaded", function(){
 
 var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = ""
+var inimigoOpt = "";
+
+function resetInimigo(){
+    const enemyOptions = document.querySelectorAll('.enemy-options div')
+    for(var i = 0 ;i < enemyOptions.length; i++ ){
+        enemyOptions[i].childNodes[0].style.opacity = 0.3;
+    }
+}
 
 function inimigoJogar(){
     let rand = Math.floor(Math.random()*3.3);
 
     const enemyOptions = document.querySelectorAll('.enemy-options div')
+    resetInimigo();
+    for(var i = 0;i < enemyOptions.length;i++){
+        if(i == rand){
+            enemyOptions[i].childNodes[0].style.opacity = 1;
+            inimigoOpt = enemyOptions[i].childNodes[0].getAttribute('opt');
+        }
+    }
 
-    alert(enemyOptions.length);
+
+
+//alert(playerOpt);
+//alert(inimigoOpt);
+
+
+
+// esta demorando 3 segundos depois do click, preciso ver isso
 }
 
 
