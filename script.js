@@ -72,9 +72,11 @@ var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = ""
 
 function inimigoJogar(){
-    let rand = Math.floor(Math.random()*3.33);
+    let rand = Math.floor(Math.random()*3.3);
 
-    alert(rand);
+    const enemyOptions = document.querySelectorAll('.enemy-options div')
+
+    alert(enemyOptions.length);
 }
 
 
