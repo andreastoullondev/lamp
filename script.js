@@ -73,7 +73,28 @@ var playerOpt = ""
 var inimigoOpt = "";
 
 function validarVitoria(){
+
+    let vencedor = document.querySelector('.vencedor');
+
     
+    if( playerOpt == "papel"){
+        
+        if(inimigoOpt == "papel"){
+            vencedor.innerHTML = "Empatou com a IA?";
+        }else if(inimigoOpt == "tesoura"){
+            vencedor.innerHTML = "Perdi para IA, BIZARRO!";
+        }else if(inimigoOpt == "pedra"){
+            vencedor.innerHTML = "Fiz o minimo";
+        }
+    }
+    
+    
+    
+    
+    
+    
+    //alert(playerOpt);
+    //alert(inimigoOpt);
 }
 
 
