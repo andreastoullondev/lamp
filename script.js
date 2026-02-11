@@ -111,7 +111,7 @@ function validarVitoria(){
         }else if(inimigoOpt == "tesoura"){
             vencedor.innerHTML = "Empatou com a IA?"
         }else if(inimigoOpt == "pedra"){
-vencedor.innerHTML = "Perdi para IA, BIZARRO!";
+            vencedor.innerHTML = "Perdi para IA, BIZARRO!";
         }
     }
 
