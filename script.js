@@ -72,6 +72,11 @@ var elementos = document.querySelectorAll('.player-options div > img');
 var playerOpt = ""
 var inimigoOpt = "";
 
+function validarVitoria(){
+    
+}
+
+
 function resetInimigo(){
     const enemyOptions = document.querySelectorAll('.enemy-options div')
     for(var i = 0 ;i < enemyOptions.length; i++ ){
@@ -92,7 +97,7 @@ function inimigoJogar(){
     }
 
 
-
+validarVitoria();
 //alert(playerOpt);
 //alert(inimigoOpt);
 
