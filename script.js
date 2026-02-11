@@ -102,6 +102,20 @@ function validarVitoria(){
         }
     }
 
+
+
+    if(playerOpt == "tesoura"){
+
+        if(inimigoOpt == "papel"){
+            vencedor.innerHTML = "Fiz o minimo";
+        }else if(inimigoOpt == "tesoura"){
+            vencedor.innerHTML = "Empatou com a IA?"
+        }else if(inimigoOpt == "pedra"){
+vencedor.innerHTML = "Perdi para IA, BIZARRO!";
+        }
+    }
+
+
     
     
     
