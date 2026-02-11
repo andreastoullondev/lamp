@@ -76,7 +76,7 @@ function validarVitoria(){
 
     let vencedor = document.querySelector('.vencedor');
 
-    
+    //Papel
     if( playerOpt == "papel"){
         
         if(inimigoOpt == "papel"){
@@ -87,6 +87,21 @@ function validarVitoria(){
             vencedor.innerHTML = "Fiz o minimo";
         }
     }
+
+    //Pedra 
+
+
+    if(playerOpt == "pedra"){
+        
+        if(inimigoOpt == "papel"){
+            vencedor.innerHTML = "Perdi para IA, BIZARRO!";
+        }else if(inimigoOpt == "tesoura"){
+            vencedor.innerHTML = "Fiz o minimo";
+        }else if(inimigoOpt == "pedra"){
+            vencedor.innerHTML = "Empatou com a IA?"
+        }
+    }
+
     
     
     
