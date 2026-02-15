@@ -38,3 +38,15 @@
     cursor: pointer;
 }
 
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+.cont > button{
+    width: 25%;
+}
+
+.cont > p{
+    width: 15%;
+}
