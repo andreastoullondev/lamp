@@ -8,10 +8,10 @@
     gap: 15px;
     width: 1000px;
     height: 500px;
-    background-color: aqua;
-    align-items: center;
-    
+    margin: auto;
 }
+
+
 
 .box{
     padding: 20px;
