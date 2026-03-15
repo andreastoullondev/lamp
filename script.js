@@ -28,9 +28,13 @@ function lampOnOff (){
     if( turnOnOff.textContent == 'Ligar'){
         lampOn();
         turnOnOff.textContent = 'Desligar';
+        lamp.removeEventListener('mouseover', lampOn);
+        lamp.removeEventListener('mouseleave', lampOff);
     }else if(turnOnOff.textContent == 'Desligar'){
         lampOff();
         turnOnOff.textContent = 'Ligar';
+        lamp.removeEventListener('mouseover', lampOn);
+        lamp.removeEventListener('mouseleave', lampOff);
     }
 }
 
